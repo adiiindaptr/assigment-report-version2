@@ -1,0 +1,8248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+	<title>Report</title>
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noticia+Text&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body windowlabel="Window" reportico="/webui/zkau/web/bb50d041/theme/default/images/mReport.png" reportlabel="Report" windowico="/webui/zkau/web/bb50d041/theme/default/images/mWindow.png">
+	<thead>
+		<table class="rp-parameter-table">
+			<section id="parameter-heading" class="colored-section">
+
+				<div class="sticky-header">
+
+					<nav class="navbar navbar-expand-lg navbar-dark">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#aset">Aset</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#liabilitas">Liabilitas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#ekuitas">Ekuitas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#pendapatan">Pendapatan</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#beban-underwriting">Beban Underwriting</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#hasil-investasi">Hasil Investasi</a>
+								<li class="nav-item">
+									<a class="nav-link" href="#beban-usaha">Beban Usaha</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#pendapatan-lain">Pendapatan (Beban) Lain</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#memo">Memo</a>
+								</li>
+								</li>
+							</ul>
+						</div>
+					</nav>
+			</section>
+
+			<section id="parameter-heading" class="colored-parameter">
+				<div>
+					<h1 class="big-heading">Report</h1>
+				</div>
+
+				<div>
+					<img class="report-image" src="report.png" alt="report-mockup">
+				</div>
+			</section>
+
+			<section id="first-section" class="colored-first">
+				<div class="top-container">
+					<table class="first-row">
+						<tr>
+							<th class="row-number">
+								Parameter:
+							</th>
+							<th class="row-text">
+								Details/Source First
+							</td>
+							<td class="row-text">
+								=
+							</td>
+							<th class="row-text">
+								No
+							</td>
+						</tr>
+						<tr>
+							<th class="row-text">
+								&nbsp;
+							</td>
+							<th class="row-txt">
+								Report Cube
+							</td>
+							<th class="row-txt">
+								=
+							</td>
+							<th class="row-txt">
+								SLU
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<div class="container-fluid">
+				<section id="second-section" class="colored-second">
+						<table class="rp-table">
+							<thead>
+								<tr class="report">
+									<th>
+										Akun
+									</th>
+									<th>
+										Catatan
+									</th>
+									<th class="rp-number">
+										Beginning Balance
+									</th>
+									<th class="rp-number">
+										Debit
+									</th>
+									<th class="rp-number">
+										Credit
+									</th>
+									<th class="rp-number">
+										Ending Balance
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<div class="middle-container">
+								<tr>
+									<td id="aset" class="rp-text">
+										<strong>Aset</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										233,405,506,936.07
+									</td>
+									<td class="rp-number">
+										6,509,566,296.44
+									</td>
+									<td class="rp-number">
+										8,249,162,636.72
+									</td>
+									<td class="rp-number">
+										231,665,910,595.79
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010201
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bank DKI
+									</td>
+									<td class="rp-number">
+										19,940,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										19,940,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010205
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bank Jabar
+									</td>
+									<td class="rp-number">
+										-150,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-150,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010206
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bank BRI
+									</td>
+									<td class="rp-number">
+										-4,500,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-4,500,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010208
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bukopin
+									</td>
+									<td class="rp-number">
+										-8,500,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-8,500,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010209
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bank Mandiri
+									</td>
+									<td class="rp-number">
+										1,000,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,000,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010210
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bank Mandiri Taspen Pos
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010212
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bank Sulselbar
+									</td>
+									<td class="rp-number">
+										-840,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-840,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101010213
+									</td>
+									<td class="rp-text">
+										Deposito biasa - Bank Riau
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101020001
+									</td>
+									<td class="rp-text">
+										Saham PT Maipark
+									</td>
+									<td class="rp-number">
+										4,558,535,101.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,558,535,101.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101030001
+									</td>
+									<td class="rp-text">
+										Obligasi Korporasi
+									</td>
+									<td class="rp-number">
+										-127,840,325.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-127,840,325.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										101050001
+									</td>
+									<td class="rp-text">
+										Surat berharga yang diterbitkan negara RI
+									</td>
+									<td class="rp-number">
+										20,738,256,715.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										20,738,256,715.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102011001
+									</td>
+									<td class="rp-text">
+										Kas kecil Pusat
+									</td>
+									<td class="rp-number">
+										9,590,097.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										9,590,097.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102011002
+									</td>
+									<td class="rp-text">
+										Kas kecil Semarang
+									</td>
+									<td class="rp-number">
+										3,344,974.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,344,974.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102011003
+									</td>
+									<td class="rp-text">
+										Kas kecil Surabaya
+									</td>
+									<td class="rp-number">
+										8,830,098.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										8,830,098.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102011004
+									</td>
+									<td class="rp-text">
+										Kas kecil Jakarta
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102011005
+									</td>
+									<td class="rp-text">
+										Kas kecil Bandung
+									</td>
+									<td class="rp-number">
+										8,430,748.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										8,430,748.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102011007
+									</td>
+									<td class="rp-text">
+										Kas kecil kantor operasional Jakarta
+									</td>
+									<td class="rp-number">
+										10,405,923.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										10,405,923.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021101
+									</td>
+									<td class="rp-text">
+										Bank Jabar Banten cabang Semarang (0006091776001)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021102
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang utama (1034012748)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021103
+									</td>
+									<td class="rp-text">
+										Bank Mandiri cabang Pemuda (1350095008114)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021104
+									</td>
+									<td class="rp-text">
+										Bank Mandiri Mpu Tantular Pusat (1360090005817)
+									</td>
+									<td class="rp-number">
+										1,294,715,497.12
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,294,715,497.12
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021105
+									</td>
+									<td class="rp-text">
+										BRI cabang Pandanaran (032501001496307)
+									</td>
+									<td class="rp-number">
+										18,285,099.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										18,285,099.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021106
+									</td>
+									<td class="rp-text">
+										BRI cabang Pandanaran (32501001752305)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021107
+									</td>
+									<td class="rp-text">
+										Bukopin Riau (1002924222)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021108
+									</td>
+									<td class="rp-text">
+										Bank Mandiri KCP Jakarta Prapatan (103-00-7788779-8)
+									</td>
+									<td class="rp-number">
+										306,862,193.88
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										306,862,193.88
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021109
+									</td>
+									<td class="rp-text">
+										Bank BCA KCP Wisma Nusantara (7340311811)
+									</td>
+									<td class="rp-number">
+										284,644,518.53
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										284,644,518.53
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021110
+									</td>
+									<td class="rp-text">
+										Bank Mandiri KCP Jakarta Prapatan MV2 (103-00-0311811-0)
+									</td>
+									<td class="rp-number">
+										413,520,678.57
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										413,520,678.57
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021111
+									</td>
+									<td class="rp-text">
+										BRI KC Jakarta Cut Mutiah (023001003878306)
+									</td>
+									<td class="rp-number">
+										151,551,173.60
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										151,551,173.60
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021112
+									</td>
+									<td class="rp-text">
+										Bank Bukopin Semarang Setiabudi (1003526182)
+									</td>
+									<td class="rp-number">
+										237,944,832.84
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										237,944,832.84
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021201
+									</td>
+									<td class="rp-text">
+										BPR Salatiga (10007570)
+									</td>
+									<td class="rp-number">
+										1,636,318.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,636,318.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021202
+									</td>
+									<td class="rp-text">
+										BTPN cabang Pandanaran (3860041919)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021203
+									</td>
+									<td class="rp-text">
+										Bukopin Setiabudi (1832200099)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021204
+									</td>
+									<td class="rp-text">
+										Midtrans Payments
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021205
+									</td>
+									<td class="rp-text">
+										Kas GoPay (0878-000-17758)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102021299
+									</td>
+									<td class="rp-text">
+										Bank dalam perjalanan
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										2,047,359,695.41
+									</td>
+									<td class="rp-number">
+										3,267,540,330.60
+									</td>
+									<td class="rp-number">
+										-1,220,180,635.19
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022103
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Blora (1.016.00476.1)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022106
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Kliwon Kudus (1.128.00074.3)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022110
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Ngadirejo (1.102.00094.0)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022112
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Plasa Klaten (1.074.00055.6)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022115
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Rembang (1.029.000367.6)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022117
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang utama (1.034.09459.7)
+									</td>
+									<td class="rp-number">
+										86,218,301.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										86,218,301.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022118
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Banjaran (1.114.00067.2)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022120
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Cilacap (1.012.03216.2)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022123
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Kajen (1.109.00038.4)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022124
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Karanganyar (1.019.01349.8)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022126
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Klaten (1.009.00379.0)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022127
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Magelang (1.005.01237.6)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022130
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Pemalang (1.025.00038.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022131
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Pasar Juwana (1.092.00106.3)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022132
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Purbalingga (1.027.02640.7)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022134
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Semarang (1.021.00035.6)
+									</td>
+									<td class="rp-number">
+										2,822,026.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,822,026.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022136
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Surakarta (1.002.03068.5)
+									</td>
+									<td class="rp-number">
+										1,795,283.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,795,283.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022137
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Tegal (1.004.00129.2)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022140
+									</td>
+									<td class="rp-text">
+										Bank Mandiri cabang Pandanaran (135-00-1310661-0)
+									</td>
+									<td class="rp-number">
+										22,230,418.23
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										22,230,418.23
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022202
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Boyolali (2.026.34721.8)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022203
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Brebes (3.028.08570.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022204
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Gayamsari / Majapahit tab (3.090.01279.1)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022206
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Pemalang Kota (2.133.01990.3)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022207
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Randudongkal (2.134.02287.8)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022208
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Unnes, Tabungan Bima (2.051.15374.7)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022209
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem kota Blora (2.095.01412.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022210
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Comal (3.111.00603.1)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022211
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Jatisrono (2.080.01328.4)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022212
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Kagok (2.089.02411.0)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022213
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Karanggede (2.117.00853.3)
+									</td>
+									<td class="rp-number">
+										2,976,230.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,976,230.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022214
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Bangkong / Metro (2.091.00040.0)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022215
+									</td>
+									<td class="rp-text">
+										Bank Jateng capem Pasar Wedi Klaten (2.077.00755.4)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022216
+									</td>
+									<td class="rp-text">
+										Bank Jateng cabang Slawi (3.035.04504.3)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022218
+									</td>
+									<td class="rp-text">
+										Bank Mandiri Mpu Tantular cabang Semarang (136-00-0987840-3)
+									</td>
+									<td class="rp-number">
+										216,166,160.51
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										216,166,160.51
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022219
+									</td>
+									<td class="rp-text">
+										BKK Tegal Barat KPO (02.02.06187.11)
+									</td>
+									<td class="rp-number">
+										6,182.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,182.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022220
+									</td>
+									<td class="rp-text">
+										BPR BKK Lasem KPO (01.10.0005658)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022223
+									</td>
+									<td class="rp-text">
+										BPR BKK Purworejo KPO (001.01.01.005533)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022224
+									</td>
+									<td class="rp-text">
+										BPR Kartasura Saribumi cabang Karanggede (2.05.00.00908)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022228
+									</td>
+									<td class="rp-text">
+										BPR Kartasura Saribumi KPO (2.05.00.03626)
+									</td>
+									<td class="rp-number">
+										4,722,075.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,722,075.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022229
+									</td>
+									<td class="rp-text">
+										PD BPR Bank Jogja (0012161295)
+									</td>
+									<td class="rp-number">
+										105,445,620.65
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										105,445,620.65
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102022230
+									</td>
+									<td class="rp-text">
+										PD. BPR Bank Wonosobo (10.02.01.01734)
+									</td>
+									<td class="rp-number">
+										2,253,227.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,253,227.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023101
+									</td>
+									<td class="rp-text">
+										Bank BNI (0149578120)
+									</td>
+									<td class="rp-number">
+										11,564,847.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										11,564,847.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023102
+									</td>
+									<td class="rp-text">
+										Bank Danamon (0011727906)
+									</td>
+									<td class="rp-number">
+										4,822,881.46
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,822,881.46
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023106
+									</td>
+									<td class="rp-text">
+										Bank Jatim Banyuwangi (0021009733)
+									</td>
+									<td class="rp-number">
+										50,172,911.24
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										50,172,911.24
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023107
+									</td>
+									<td class="rp-text">
+										Bank Jatim Blitar (0141002800)
+									</td>
+									<td class="rp-number">
+										16,804,104.43
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										16,804,104.43
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023108
+									</td>
+									<td class="rp-text">
+										Bank Jatim Bojonegoro (0081008455)
+									</td>
+									<td class="rp-number">
+										976,759.02
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										976,759.02
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023109
+									</td>
+									<td class="rp-text">
+										Bank Jatim cabang utama (new) (0011265979)
+									</td>
+									<td class="rp-number">
+										601,763,438.52
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										601,763,438.52
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023110
+									</td>
+									<td class="rp-text">
+										Bank Jatim cabang utama (0011058633)
+									</td>
+									<td class="rp-number">
+										10,787,704.78
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										10,787,704.78
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023111
+									</td>
+									<td class="rp-text">
+										Bank Jatim Dr. Soetomo (0321000649)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023112
+									</td>
+									<td class="rp-text">
+										Bank Jatim Gresik (0271001983)
+									</td>
+									<td class="rp-number">
+										13,337,054.39
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										13,337,054.39
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023113
+									</td>
+									<td class="rp-text">
+										Bank Jatim Jakarta (0351000279)
+									</td>
+									<td class="rp-number">
+										13,151,842.97
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										13,151,842.97
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023114
+									</td>
+									<td class="rp-text">
+										Bank Jatim Jatirogo (0671000111)
+									</td>
+									<td class="rp-number">
+										4,937,728.82
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,937,728.82
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023115
+									</td>
+									<td class="rp-text">
+										Bank Jatim Jember (0031013800)
+									</td>
+									<td class="rp-number">
+										1,493,356.85
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,493,356.85
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023116
+									</td>
+									<td class="rp-text">
+										Bank Jatim Kediri (0061005005)
+									</td>
+									<td class="rp-number">
+										6,098,385.89
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,098,385.89
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023117
+									</td>
+									<td class="rp-text">
+										Bank Jatim Kepanjen (0601000016)
+									</td>
+									<td class="rp-number">
+										431,218.75
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										431,218.75
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023118
+									</td>
+									<td class="rp-text">
+										Bank Jatim Klampis / Itat (0581000022)
+									</td>
+									<td class="rp-number">
+										-0.55
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.55
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023119
+									</td>
+									<td class="rp-text">
+										Bank Jatim Madiun (0051010755)
+									</td>
+									<td class="rp-number">
+										2,186,755.18
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,186,755.18
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023120
+									</td>
+									<td class="rp-text">
+										Bank Jatim Magetan (0301017782)
+									</td>
+									<td class="rp-number">
+										6,170,783.33
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,170,783.33
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023121
+									</td>
+									<td class="rp-text">
+										Bank Jatim Malang (0041019922)
+									</td>
+									<td class="rp-number">
+										125,310,108.95
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										125,310,108.95
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023122
+									</td>
+									<td class="rp-text">
+										Bank Jatim Mojokerto (0161000266)
+									</td>
+									<td class="rp-number">
+										11,502,853.20
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										11,502,853.20
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023123
+									</td>
+									<td class="rp-text">
+										Bank Jatim Nganjuk (0191003788)
+									</td>
+									<td class="rp-number">
+										7,667,894.12
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										7,667,894.12
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023124
+									</td>
+									<td class="rp-text">
+										Bank Jatim Ngawi (0101004100)
+									</td>
+									<td class="rp-number">
+										6,853,673.79
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,853,673.79
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023125
+									</td>
+									<td class="rp-text">
+										Bank Jatim Pare (0421000166)
+									</td>
+									<td class="rp-number">
+										13,831,262.37
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										13,831,262.37
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023126
+									</td>
+									<td class="rp-text">
+										Bank Jatim Pasuruan (0231000433)
+									</td>
+									<td class="rp-number">
+										7,123,181.73
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										7,123,181.73
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023127
+									</td>
+									<td class="rp-text">
+										Bank Jatim Probolinggo (0121005311)
+									</td>
+									<td class="rp-number">
+										-0.07
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.07
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023129
+									</td>
+									<td class="rp-text">
+										Bank Jatim Sampang (0241267326)
+									</td>
+									<td class="rp-number">
+										6,188,057.76
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,188,057.76
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023130
+									</td>
+									<td class="rp-text">
+										Bank Jatim Trenggalek (0221000533)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023131
+									</td>
+									<td class="rp-text">
+										Bank Jatim Tuban (0171001533)
+									</td>
+									<td class="rp-number">
+										4,460,528.45
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,460,528.45
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023132
+									</td>
+									<td class="rp-text">
+										Bank Jatim Tulungagung (0151002366)
+									</td>
+									<td class="rp-number">
+										-0.37
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.37
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023133
+									</td>
+									<td class="rp-text">
+										Bank Jatim cabang utama valas (0011163131)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023134
+									</td>
+									<td class="rp-text">
+										Bank Mandiri Niaga (140.00.9102888.7)
+									</td>
+									<td class="rp-number">
+										3,241,221.09
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,241,221.09
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023135
+									</td>
+									<td class="rp-text">
+										Bank Mandiri Pemuda (142.009102379.5)
+									</td>
+									<td class="rp-number">
+										30,541,588.43
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										30,541,588.43
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023136
+									</td>
+									<td class="rp-text">
+										Bank syariah Bukopin (88.000.17.123)
+									</td>
+									<td class="rp-number">
+										2,710,690.70
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,710,690.70
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023204
+									</td>
+									<td class="rp-text">
+										Bank Jatim Bangil (0492000400)
+									</td>
+									<td class="rp-number">
+										7,006,069.10
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										7,006,069.10
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023205
+									</td>
+									<td class="rp-text">
+										Bank Jatim Bangkalan (0252006100)
+									</td>
+									<td class="rp-number">
+										19,545,198.70
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										19,545,198.70
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023206
+									</td>
+									<td class="rp-text">
+										Bank Jatim Batu (0402000522)
+									</td>
+									<td class="rp-number">
+										-0.07
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.07
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023209
+									</td>
+									<td class="rp-text">
+										Bank Jatim Besuki (0542018682)
+									</td>
+									<td class="rp-number">
+										13,895,820.40
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										13,895,820.40
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023211
+									</td>
+									<td class="rp-text">
+										Bank Jatim Caruban (0412004299)
+									</td>
+									<td class="rp-number">
+										3,680,256.59
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,680,256.59
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023214
+									</td>
+									<td class="rp-text">
+										Bank Jatim Genteng (0552008299)
+									</td>
+									<td class="rp-number">
+										10,314,290.33
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										10,314,290.33
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023219
+									</td>
+									<td class="rp-text">
+										Bank Jatim Jombang (0112185800)
+									</td>
+									<td class="rp-number">
+										-0.38
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.38
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023225
+									</td>
+									<td class="rp-text">
+										Bank Jatim Kertosono (0522008100)
+									</td>
+									<td class="rp-number">
+										6,663,198.41
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,663,198.41
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023226
+									</td>
+									<td class="rp-text">
+										Bank Jatim Ketapang (1192001621)
+									</td>
+									<td class="rp-number">
+										19,715,787.16
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										19,715,787.16
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023227
+									</td>
+									<td class="rp-text">
+										Bank Jatim Kraksaan (0132065744)
+									</td>
+									<td class="rp-number">
+										-0.67
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.67
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023228
+									</td>
+									<td class="rp-text">
+										Bank Jatim Lamongan (0282014722)
+									</td>
+									<td class="rp-number">
+										14,144,087.63
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										14,144,087.63
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023230
+									</td>
+									<td class="rp-text">
+										Bank Jatim Lumajang (0092112622)
+									</td>
+									<td class="rp-number">
+										2,559,672.28
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,559,672.28
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023233
+									</td>
+									<td class="rp-text">
+										Bank Jatim Mojoagung (0452000688)
+									</td>
+									<td class="rp-number">
+										6,073,555.31
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,073,555.31
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023234
+									</td>
+									<td class="rp-text">
+										Bank Jatim Mojosari (0482002444)
+									</td>
+									<td class="rp-number">
+										6,589,808.34
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,589,808.34
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023235
+									</td>
+									<td class="rp-text">
+										Bank Jatim Ngunut (0472001699)
+									</td>
+									<td class="rp-number">
+										-0.35
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.35
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023236
+									</td>
+									<td class="rp-text">
+										Bank Jatim Pacitan (0212069122)
+									</td>
+									<td class="rp-number">
+										6,702,695.59
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,702,695.59
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023237
+									</td>
+									<td class="rp-text">
+										Bank Jatim Pagu (1112004200)
+									</td>
+									<td class="rp-number">
+										-0.20
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.20
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023238
+									</td>
+									<td class="rp-text">
+										Bank Jatim Pamekasan (0072128600)
+									</td>
+									<td class="rp-number">
+										3,192,095.98
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,192,095.98
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023239
+									</td>
+									<td class="rp-text">
+										Bank Jatim Pandaan (0502001899)
+									</td>
+									<td class="rp-number">
+										-0.43
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.43
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023240
+									</td>
+									<td class="rp-text">
+										Bank Jatim Pasirian (0432026108)
+									</td>
+									<td class="rp-number">
+										6,851,526.08
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,851,526.08
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023241
+									</td>
+									<td class="rp-text">
+										Bank Jatim Perak (0332000688)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023246
+									</td>
+									<td class="rp-text">
+										Bank Jatim Ponorogo (0202039800)
+									</td>
+									<td class="rp-number">
+										10,690,247.95
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										10,690,247.95
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023247
+									</td>
+									<td class="rp-text">
+										Bank Jatim Prajekan (1152003656)
+									</td>
+									<td class="rp-number">
+										1,649,050.43
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,649,050.43
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023250
+									</td>
+									<td class="rp-text">
+										Bank Jatim Rogojampi (1252003602)
+									</td>
+									<td class="rp-number">
+										212,479.55
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										212,479.55
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023251
+									</td>
+									<td class="rp-text">
+										Bank Jatim Rungkut (0662020818)
+									</td>
+									<td class="rp-number">
+										61,999.62
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										61,999.62
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023252
+									</td>
+									<td class="rp-text">
+										Bank Jatim Sidoarjo (0262023377)
+									</td>
+									<td class="rp-number">
+										32,395,428.35
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										32,395,428.35
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023253
+									</td>
+									<td class="rp-text">
+										Bank Jatim Situbondo (0292025577)
+									</td>
+									<td class="rp-number">
+										944,967.01
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										944,967.01
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023254
+									</td>
+									<td class="rp-text">
+										Bank Jatim Sugio (0862001052)
+									</td>
+									<td class="rp-number">
+										-0.96
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.96
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023257
+									</td>
+									<td class="rp-text">
+										Bank Jatim U.W.K. (0382033244)
+									</td>
+									<td class="rp-number">
+										-0.80
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-0.80
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023258
+									</td>
+									<td class="rp-text">
+										Bank Jatim Wiyung (1027000947)
+									</td>
+									<td class="rp-number">
+										5,736,930.31
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										5,736,930.31
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023259
+									</td>
+									<td class="rp-text">
+										Bank Jatim Wlingi (0462022417)
+									</td>
+									<td class="rp-number">
+										8,817,518.73
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										8,817,518.73
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023261
+									</td>
+									<td class="rp-text">
+										BPR Danamitra Surya (0113000018)
+									</td>
+									<td class="rp-number">
+										13,690,699.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										13,690,699.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023262
+									</td>
+									<td class="rp-text">
+										BPR Delta Artha (01.11.000028.01)
+									</td>
+									<td class="rp-number">
+										15,235,190.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										15,235,190.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023263
+									</td>
+									<td class="rp-text">
+										BPR Jatim (by. - 0013001968)
+									</td>
+									<td class="rp-number">
+										101,106,213.07
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										101,106,213.07
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023264
+									</td>
+									<td class="rp-text">
+										BPR Sawa (101.003407)
+									</td>
+									<td class="rp-number">
+										66,523,547.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										66,523,547.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023265
+									</td>
+									<td class="rp-text">
+										BPR Surya Artha U. (01.21.000145)
+									</td>
+									<td class="rp-number">
+										5,756,579.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										5,756,579.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102023266
+									</td>
+									<td class="rp-text">
+										Bank Jatim cabang utama 1 (0011280986)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024101
+									</td>
+									<td class="rp-text">
+										Bank DKI Bintaro (417.06.00021.5)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024102
+									</td>
+									<td class="rp-text">
+										Bank DKI Abdul Muis (139.06.00005.5)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024104
+									</td>
+									<td class="rp-text">
+										Bank DKI BSD (625.06.00027.8)
+									</td>
+									<td class="rp-number">
+										616,225.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										616,225.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024105
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Balai Kota (108.04.05286.4)
+									</td>
+									<td class="rp-number">
+										19,479,062.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										19,479,062.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024106
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Cakung (123.06.00294.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024107
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Dewi .S/ KR. Jati (513.06.00747.7)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024108
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Glodok (305.06.00003.7)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024109
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Gunung Sahari (104.06.00274.8)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024111
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Jatibaru (110.04.07386.3)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024112
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Kali Malang (512.06.00329.5)
+									</td>
+									<td class="rp-number">
+										34,773,349.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										34,773,349.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024113
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Klender (501.04.00710.7)
+									</td>
+									<td class="rp-number">
+										3,566,624.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,566,624.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024114
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Krekot. (102.08.00770.8)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024115
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Matraman (500.06.03740.4)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024116
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Otista / Jatinegara (511.06.02657.2)
+									</td>
+									<td class="rp-number">
+										4,342,097.72
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,342,097.72
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024117
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Permata Hijau (411.06.00456.4)
+									</td>
+									<td class="rp-number">
+										39,134,433.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										39,134,433.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024118
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Pintu Besar (300.08.02755.1)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024119
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Pluit (302.08.00322.5)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024120
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Prapanca. (404.06.00001.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024121
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Pasar Induk KR. Jati (523.06.00001.1)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024122
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Samsat (103.06.00122.1)
+									</td>
+									<td class="rp-number">
+										3,943,962.50
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,943,962.50
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024123
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Senen (109.08.01595.3)
+									</td>
+									<td class="rp-number">
+										3,846,815.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,846,815.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024124
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Tj. Priok (200.06.03107.5)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024125
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang utama (101.06.05194.9)
+									</td>
+									<td class="rp-number">
+										704,896,021.75
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										704,896,021.75
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024126
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Wlkt. Jakpus (111.06.06601.3)
+									</td>
+									<td class="rp-number">
+										40,707,159.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										40,707,159.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024127
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Yos Sudarso (201.08.10478.7)
+									</td>
+									<td class="rp-number">
+										28,184,710.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										28,184,710.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024128
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Bekasi (600.06.00001.9)
+									</td>
+									<td class="rp-number">
+										1,574,661.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,574,661.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024129
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Bendungan Hilir (113.06.06204.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024130
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Wlkt. Jaktim (503.06.00171.4)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024131
+									</td>
+									<td class="rp-text">
+										Bank DKI capem KBN (209.06.00002.5)
+									</td>
+									<td class="rp-number">
+										4,059,415.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,059,415.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024132
+									</td>
+									<td class="rp-text">
+										Bank DKI Cempaka Mas (122.08.00983.7)
+									</td>
+									<td class="rp-number">
+										3,223,710.52
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,223,710.52
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024133
+									</td>
+									<td class="rp-text">
+										Bank DKI Cipulir (412.06.02302.8)
+									</td>
+									<td class="rp-number">
+										3,649,336.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,649,336.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024135
+									</td>
+									<td class="rp-text">
+										Bank DKI Panglima Polim / Fatmawati (419.08.00032.4)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024136
+									</td>
+									<td class="rp-text">
+										Bank DKI Pamulang (425.06.00003.8)
+									</td>
+									<td class="rp-number">
+										1,282,980.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,282,980.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024137
+									</td>
+									<td class="rp-text">
+										Bank DKI Pantai Indah Kapuk (318.06.00001.2)
+									</td>
+									<td class="rp-number">
+										3,009,012.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,009,012.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024139
+									</td>
+									<td class="rp-text">
+										Bank DKI Pondok Labu (401.08.02172.8)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024140
+									</td>
+									<td class="rp-text">
+										Bank DKI Samsat Gunung Sahari (140.08.00012.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024141
+									</td>
+									<td class="rp-text">
+										Bank DKI Sudirman (127.06.00001.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024142
+									</td>
+									<td class="rp-text">
+										Bank DKI Sunter (213.06.00022.8)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024143
+									</td>
+									<td class="rp-text">
+										Bank DKI Tanah abang (118.06.03023.7)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024145
+									</td>
+									<td class="rp-text">
+										Bank DKI Tebet (402.06.00924.9)
+									</td>
+									<td class="rp-number">
+										559,691.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										559,691.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024147
+									</td>
+									<td class="rp-text">
+										Bank DKI Wlkt. Jakbar (303.06.00005.7)
+									</td>
+									<td class="rp-number">
+										3,157,176.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,157,176.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024148
+									</td>
+									<td class="rp-text">
+										Bank DKI cabang Kebayoran Baru (40008026616)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024149
+									</td>
+									<td class="rp-text">
+										Bank Jatim cabang Kelapa Gading (123.1000.221)
+									</td>
+									<td class="rp-number">
+										0.34
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.34
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024150
+									</td>
+									<td class="rp-text">
+										Bank Mandiri (127.00.9806649.9)
+									</td>
+									<td class="rp-number">
+										2.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024151
+									</td>
+									<td class="rp-text">
+										Bank Mandiri Pejaten Jakarta (operational) (127.00.0703136.0)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024152
+									</td>
+									<td class="rp-text">
+										Bank Riau Cabut (101.06.00006)
+									</td>
+									<td class="rp-number">
+										86,859,256.06
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										86,859,256.06
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024153
+									</td>
+									<td class="rp-text">
+										Bank Yudha Bakti (180001450)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024154
+									</td>
+									<td class="rp-text">
+										Bank Yudha Bakti Riau (900000740)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024155
+									</td>
+									<td class="rp-text">
+										BPD Lampung (380.00.02.05431.1)
+									</td>
+									<td class="rp-number">
+										308,045,584.37
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										308,045,584.37
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024158
+									</td>
+									<td class="rp-text">
+										BPD Lampung KK Daya Murni (396.00.02.00030.4)
+									</td>
+									<td class="rp-number">
+										32,789,078.80
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										32,789,078.80
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024159
+									</td>
+									<td class="rp-text">
+										BPD Lampung Krui (393.00.02.00003.0)
+									</td>
+									<td class="rp-number">
+										4,715,835.20
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,715,835.20
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024160
+									</td>
+									<td class="rp-text">
+										BPD Lampung Liwa (387.00.02.00066.2)
+									</td>
+									<td class="rp-number">
+										6,788,679.97
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										6,788,679.97
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024163
+									</td>
+									<td class="rp-text">
+										BPD Lampung Natar (403.00.02.00044.6)
+									</td>
+									<td class="rp-number">
+										1.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024165
+									</td>
+									<td class="rp-text">
+										Bank Mandiri cabang Prapatan Jakarta operasional (103.00656.77.888)
+									</td>
+									<td class="rp-number">
+										11,938,743.75
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										11,938,743.75
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024166
+									</td>
+									<td class="rp-text">
+										Bank Mandiri cabang Prapatan Jakarta bisnis (103.00070.77.007)
+									</td>
+									<td class="rp-number">
+										56,875,906.50
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										56,875,906.50
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024167
+									</td>
+									<td class="rp-text">
+										Bank DKI capem Rawamangun (153.06.00002.6)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024168
+									</td>
+									<td class="rp-text">
+										Bank DKI capem Joglo (322.06.00021.5)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024169
+									</td>
+									<td class="rp-text">
+										Bank DKI capem Mayestik (439.06.00021.6)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024170
+									</td>
+									<td class="rp-text">
+										Bank DKI capem Cirendeu (429.06.00181.9)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024171
+									</td>
+									<td class="rp-text">
+										Bank Woori Saudara KC Energy Jakarta (200200013715)
+									</td>
+									<td class="rp-number">
+										17,691,480.84
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										17,691,480.84
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024201
+									</td>
+									<td class="rp-text">
+										BPR Darbeni Rizki (2100000006)
+									</td>
+									<td class="rp-number">
+										9,196,878.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										9,196,878.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102024202
+									</td>
+									<td class="rp-text">
+										PT. BPR Bahana Ekonomi Sentosa (00101100139)
+									</td>
+									<td class="rp-number">
+										14,247,092.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										14,247,092.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025101
+									</td>
+									<td class="rp-text">
+										Bank Jabar cabang Bandung (0010010163689)
+									</td>
+									<td class="rp-number">
+										32,355,635.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										32,355,635.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025102
+									</td>
+									<td class="rp-text">
+										Bank Jabar cabang Cianjur (0140010030526)
+									</td>
+									<td class="rp-number">
+										153,647,017.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										153,647,017.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025104
+									</td>
+									<td class="rp-text">
+										Bank Jabar cabang Soreang (0220010005622)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025106
+									</td>
+									<td class="rp-text">
+										Bank Jabar KCP Pasteur (0021851345004)
+									</td>
+									<td class="rp-number">
+										267,189,636.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										267,189,636.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025107
+									</td>
+									<td class="rp-text">
+										Bank Jabar syariah Tangerang (0000181692001)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025108
+									</td>
+									<td class="rp-text">
+										Bank Mandiri KCP BKR (1300013533750)
+									</td>
+									<td class="rp-number">
+										1,270,447.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,270,447.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025109
+									</td>
+									<td class="rp-text">
+										Bank Sulsel cabang Daya (1380030000000193)
+									</td>
+									<td class="rp-number">
+										110,228,915.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										110,228,915.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025110
+									</td>
+									<td class="rp-text">
+										Bank Woori Saudara SH (1801000173)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025115
+									</td>
+									<td class="rp-text">
+										Bank Mandiri KCP Bandung BKR (1300085232323)
+									</td>
+									<td class="rp-number">
+										26,253,525.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										26,253,525.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025201
+									</td>
+									<td class="rp-text">
+										BPR Bumi Bandung Kencana (10075826)
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102025202
+									</td>
+									<td class="rp-text">
+										BPR Sukabumi (1016791)
+									</td>
+									<td class="rp-number">
+										44,635,255.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										44,635,255.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102029901
+									</td>
+									<td class="rp-text">
+										Penerimaan belum dialokasi
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										1,898,971,188.99
+									</td>
+									<td class="rp-number">
+										1,900,435,403.99
+									</td>
+									<td class="rp-number">
+										-1,464,215.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102029903
+									</td>
+									<td class="rp-text">
+										Ayat silang
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										1,571,458,911.00
+									</td>
+									<td class="rp-number">
+										1,571,458,911.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										102029904
+									</td>
+									<td class="rp-text">
+										Perantara Unidentified
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103010001
+									</td>
+									<td class="rp-text">
+										Piutang premi penutupan langsung
+									</td>
+									<td class="rp-number">
+										8,938,799,076.55
+									</td>
+									<td class="rp-number">
+										965,185,113.04
+									</td>
+									<td class="rp-number">
+										1,408,043,321.13
+									</td>
+									<td class="rp-number">
+										8,495,940,868.46
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103010002
+									</td>
+									<td class="rp-text">
+										Piutang premi penutupan langsung ko-asuransi leader
+									</td>
+									<td class="rp-number">
+										114,435,787.51
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										114,435,787.51
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103010003
+									</td>
+									<td class="rp-text">
+										Piutang premi penutupan langsung ko-asuransi member
+									</td>
+									<td class="rp-number">
+										680,671,635.51
+									</td>
+									<td class="rp-number">
+										1,191,388.00
+									</td>
+									<td class="rp-number">
+										101,684,670.00
+									</td>
+									<td class="rp-number">
+										580,178,353.51
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103020001
+									</td>
+									<td class="rp-text">
+										Cadangan penghapusan piutang langsung
+									</td>
+									<td class="rp-number">
+										-7,358,909,151.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-7,358,909,151.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103030002
+									</td>
+									<td class="rp-text">
+										Piutang klaim re-asuransi fakultatif
+									</td>
+									<td class="rp-number">
+										523,964,643.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										523,964,643.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103030003
+									</td>
+									<td class="rp-text">
+										Piutang klaim re-asuransi treaty proporsional
+									</td>
+									<td class="rp-number">
+										24,962,649.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										24,962,649.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103030004
+									</td>
+									<td class="rp-text">
+										Piutang klaim re-asuransi treaty non proporsional
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103030006
+									</td>
+									<td class="rp-text">
+										Piutang klaim re-asuransi pool
+									</td>
+									<td class="rp-number">
+										199,052,499.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										199,052,499.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103040001
+									</td>
+									<td class="rp-text">
+										Cadangan penghapusan piutang klaim re-asuransi
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103050001
+									</td>
+									<td class="rp-text">
+										Piutang re-asuransi fakultatif
+									</td>
+									<td class="rp-number">
+										10,311,448,536.62
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										10,311,448,536.62
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103050002
+									</td>
+									<td class="rp-text">
+										Piutang re-asuransi treaty proporsional
+									</td>
+									<td class="rp-number">
+										1,322,103,379.62
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,322,103,379.62
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103050003
+									</td>
+									<td class="rp-text">
+										Piutang re-asuransi treaty non proporsional
+									</td>
+									<td class="rp-number">
+										28,192,505.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										28,192,505.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103060001
+									</td>
+									<td class="rp-text">
+										Cadangan penghapusan piutang re-asuransi
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103070001
+									</td>
+									<td class="rp-text">
+										Aset re-asuransi atas cadangan premi
+									</td>
+									<td class="rp-number">
+										37,389,754,414.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										37,389,754,414.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103070002
+									</td>
+									<td class="rp-text">
+										Aset re-asuransi atas CAPYBMP
+									</td>
+									<td class="rp-number">
+										-9,250,857,662.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-9,250,857,662.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103070003
+									</td>
+									<td class="rp-text">
+										Aset re-asuransi atas cadangan klaim
+									</td>
+									<td class="rp-number">
+										22,260,203,297.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										22,260,203,297.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103090001
+									</td>
+									<td class="rp-text">
+										Piutang hasil investasi Deposito
+									</td>
+									<td class="rp-number">
+										432,486,614.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										432,486,614.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103090002
+									</td>
+									<td class="rp-text">
+										Piutang hasil investasi SBN
+									</td>
+									<td class="rp-number">
+										143,396,684.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										143,396,684.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103100001
+									</td>
+									<td class="rp-text">
+										Piutang komisi
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103110001
+									</td>
+									<td class="rp-text">
+										Piutang klaim re-asuransi ko-asuransi
+									</td>
+									<td class="rp-number">
+										84,105,443,873.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										84,105,443,873.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103110002
+									</td>
+									<td class="rp-text">
+										Cadangan Penghapusan Piutang klaim re-asuransi ko-asuransi
+									</td>
+									<td class="rp-number">
+										-18,267,866,331.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-18,267,866,331.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										103990001
+									</td>
+									<td class="rp-text">
+										Piutang lainnya
+									</td>
+									<td class="rp-number">
+										9,797,572,905.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										9,797,572,905.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										104000003
+									</td>
+									<td class="rp-text">
+										Pajak bayar di muka pasal 23
+									</td>
+									<td class="rp-number">
+										14,182.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										14,182.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										104000004
+									</td>
+									<td class="rp-text">
+										Pajak bayar di muka pasal 25
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										105000001
+									</td>
+									<td class="rp-text">
+										Uang muka klaim
+									</td>
+									<td class="rp-number">
+										200,675,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										200,675,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										106000001
+									</td>
+									<td class="rp-text">
+										Uang muka vendor
+									</td>
+									<td class="rp-number">
+										14,700,000.00
+									</td>
+									<td class="rp-number">
+										15,000,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										29,700,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										106000002
+									</td>
+									<td class="rp-text">
+										Uang muka perjalanan dinas
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107011001
+									</td>
+									<td class="rp-text">
+										Tanah
+									</td>
+									<td class="rp-number">
+										24,609,595,782.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										24,609,595,782.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107012001
+									</td>
+									<td class="rp-text">
+										Bangunan
+									</td>
+									<td class="rp-number">
+										3,942,466,217.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,942,466,217.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107012002
+									</td>
+									<td class="rp-text">
+										Akumulasi penyusutan bangunan
+									</td>
+									<td class="rp-number">
+										-567,917,710.29
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-567,917,710.29
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107020001
+									</td>
+									<td class="rp-text">
+										Komputer
+									</td>
+									<td class="rp-number">
+										1,827,907,750.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,827,907,750.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107020002
+									</td>
+									<td class="rp-text">
+										Akumulasi penyusutan komputer
+									</td>
+									<td class="rp-number">
+										-1,662,127,073.25
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-1,662,127,073.25
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107030001
+									</td>
+									<td class="rp-text">
+										Inventaris kantor
+									</td>
+									<td class="rp-number">
+										2,633,131,874.43
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,633,131,874.43
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107030002
+									</td>
+									<td class="rp-text">
+										Akumulasi penyusutan inventaris kantor
+									</td>
+									<td class="rp-number">
+										-2,419,793,255.50
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-2,419,793,255.50
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107040001
+									</td>
+									<td class="rp-text">
+										Kendaraan
+									</td>
+									<td class="rp-number">
+										273,525,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										273,525,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										107040002
+									</td>
+									<td class="rp-text">
+										Akumulasi penyusutan kendaraan
+									</td>
+									<td class="rp-number">
+										-273,524,972.50
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-273,524,972.50
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										108000001
+									</td>
+									<td class="rp-text">
+										Aset pajak tangguhan
+									</td>
+									<td class="rp-number">
+										19,464,315,606.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										19,464,315,606.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000001
+									</td>
+									<td class="rp-text">
+										Perangkat lunak
+									</td>
+									<td class="rp-number">
+										3,671,827,550.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,671,827,550.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000002
+									</td>
+									<td class="rp-text">
+										Akumulasi amortisasi perangkat lunak
+									</td>
+									<td class="rp-number">
+										-1,435,306,740.44
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-1,435,306,740.44
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000003
+									</td>
+									<td class="rp-text">
+										Biaya ditangguhkan
+									</td>
+									<td class="rp-number">
+										3,125,989,089.00
+									</td>
+									<td class="rp-number">
+										10,400,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										3,136,389,089.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000004
+									</td>
+									<td class="rp-text">
+										Akumulasi amortisasi biaya ditangguhkan
+									</td>
+									<td class="rp-number">
+										-1,468,912,245.73
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-1,468,912,245.73
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000005
+									</td>
+									<td class="rp-text">
+										Aset hak guna
+									</td>
+									<td class="rp-number">
+										2,518,451,451.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,518,451,451.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000006
+									</td>
+									<td class="rp-text">
+										Akumulasi amortisasi aset hak guna
+									</td>
+									<td class="rp-number">
+										-1,436,952,238.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-1,436,952,238.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000008
+									</td>
+									<td class="rp-text">
+										Aset lain-lain
+									</td>
+									<td class="rp-number">
+										236,616,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										236,616,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000098
+									</td>
+									<td class="rp-text">
+										Penjualan aset
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										109000099
+									</td>
+									<td class="rp-text">
+										Aset clearing
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td id="liabilitas" class="rp-text">
+										<strong>Liabilitas</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-148,145,806,141.92
+									</td>
+									<td class="rp-number">
+										5,501,817,102.70
+									</td>
+									<td class="rp-number">
+										3,935,883,080.00
+									</td>
+									<td class="rp-number">
+										-146,579,872,119.22
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										201000001
+									</td>
+									<td class="rp-text">
+										Utang klaim langsung
+									</td>
+									<td class="rp-number">
+										-17,547,840,223.00
+									</td>
+									<td class="rp-number">
+										853,672,430.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										-16,694,167,793.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										202000002
+									</td>
+									<td class="rp-text">
+										Utang re-asuransi fakultatif
+									</td>
+									<td class="rp-number">
+										-216,896,158.00
+									</td>
+									<td class="rp-number">
+										14,985,755.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										-201,910,403.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										202000003
+									</td>
+									<td class="rp-text">
+										Utang re-asuransi treaty proporsional
+									</td>
+									<td class="rp-number">
+										-2,029,093,454.20
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-2,029,093,454.20
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										202000004
+									</td>
+									<td class="rp-text">
+										Utang re-asuransi treaty non proporsional
+									</td>
+									<td class="rp-number">
+										-28,192,505.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-28,192,505.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										202000005
+									</td>
+									<td class="rp-text">
+										Utang re-asuransi facoblig
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										202000006
+									</td>
+									<td class="rp-text">
+										Utang re-asuransi pool
+									</td>
+									<td class="rp-number">
+										-206,999,439.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-206,999,439.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										202100001
+									</td>
+									<td class="rp-text">
+										Utang re-asuransi ko-asuransi
+									</td>
+									<td class="rp-number">
+										-13,153,607.57
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-13,153,607.57
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										203000001
+									</td>
+									<td class="rp-text">
+										Utang komisi langsung
+									</td>
+									<td class="rp-number">
+										-817,579,462.36
+									</td>
+									<td class="rp-number">
+										70,531,638.69
+									</td>
+									<td class="rp-number">
+										79,862,129.24
+									</td>
+									<td class="rp-number">
+										-826,909,952.91
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										203000003
+									</td>
+									<td class="rp-text">
+										Utang komisi ko-asuransi member
+									</td>
+									<td class="rp-number">
+										-1,876,755.53
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-1,876,755.53
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										204000001
+									</td>
+									<td class="rp-text">
+										Utang pajak pasal 21
+									</td>
+									<td class="rp-number">
+										-145,264,811.22
+									</td>
+									<td class="rp-number">
+										73,414,328.00
+									</td>
+									<td class="rp-number">
+										700,618.12
+									</td>
+									<td class="rp-number">
+										-72,551,101.34
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										204000002
+									</td>
+									<td class="rp-text">
+										Utang pajak pasal 22
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										204000003
+									</td>
+									<td class="rp-text">
+										Utang pajak pasal 23 / 26
+									</td>
+									<td class="rp-number">
+										-30,812,367.98
+									</td>
+									<td class="rp-number">
+										30,812,283.00
+									</td>
+									<td class="rp-number">
+										4,625,922.51
+									</td>
+									<td class="rp-number">
+										-4,626,007.49
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										204000006
+									</td>
+									<td class="rp-text">
+										Utang pajak pasal 4 ayat 2
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										206000001
+									</td>
+									<td class="rp-text">
+										Liabilitas imbalan kerja jangka panjang
+									</td>
+									<td class="rp-number">
+										-5,375,580,269.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-5,375,580,269.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										206000002
+									</td>
+									<td class="rp-text">
+										Liabilitas Sewa
+									</td>
+									<td class="rp-number">
+										-728,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-728,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										207000001
+									</td>
+									<td class="rp-text">
+										Uang muka premi jangka panjang
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000001
+									</td>
+									<td class="rp-text">
+										Titipan iuran BPJS Ketenagakerjaan
+									</td>
+									<td class="rp-number">
+										-76,362,734.00
+									</td>
+									<td class="rp-number">
+										76,262,734.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										-100,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000002
+									</td>
+									<td class="rp-text">
+										Titipan iuran BPJS Kesehatan
+									</td>
+									<td class="rp-number">
+										-7,595,420.00
+									</td>
+									<td class="rp-number">
+										34,491,600.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										26,896,180.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000003
+									</td>
+									<td class="rp-text">
+										Titipan premi
+									</td>
+									<td class="rp-number">
+										-946,375,753.69
+									</td>
+									<td class="rp-number">
+										450.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										-946,375,303.69
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000004
+									</td>
+									<td class="rp-text">
+										Titipan lainnya
+									</td>
+									<td class="rp-number">
+										-56,651,042.18
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-56,651,042.18
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000005
+									</td>
+									<td class="rp-text">
+										Utang vendor
+									</td>
+									<td class="rp-number">
+										127,030,040.60
+									</td>
+									<td class="rp-number">
+										290,900,608.00
+									</td>
+									<td class="rp-number">
+										228,400,608.00
+									</td>
+									<td class="rp-number">
+										189,530,040.60
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000006
+									</td>
+									<td class="rp-text">
+										Seleksi pembayaran
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										3,399,581,683.77
+									</td>
+									<td class="rp-number">
+										3,399,563,533.77
+									</td>
+									<td class="rp-number">
+										18,150.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000007
+									</td>
+									<td class="rp-text">
+										Pendapatan premi diterima di muka
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000008
+									</td>
+									<td class="rp-text">
+										Utang biaya
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000009
+									</td>
+									<td class="rp-text">
+										Titipan premi Cabang Semarang
+									</td>
+									<td class="rp-number">
+										-17,431,654.90
+									</td>
+									<td class="rp-number">
+										4,952,200.00
+									</td>
+									<td class="rp-number">
+										802,256.40
+									</td>
+									<td class="rp-number">
+										-13,281,711.30
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000010
+									</td>
+									<td class="rp-text">
+										Titipan premi Cabang Surabaya
+									</td>
+									<td class="rp-number">
+										16,922,395.61
+									</td>
+									<td class="rp-number">
+										225.00
+									</td>
+									<td class="rp-number">
+										1,191,388.00
+									</td>
+									<td class="rp-number">
+										15,731,232.61
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000011
+									</td>
+									<td class="rp-text">
+										Titipan premi Cabang Jakarta
+									</td>
+									<td class="rp-number">
+										-101,551,561.87
+									</td>
+									<td class="rp-number">
+										287,397,112.24
+									</td>
+									<td class="rp-number">
+										219,701,623.96
+									</td>
+									<td class="rp-number">
+										-33,856,073.59
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000012
+									</td>
+									<td class="rp-text">
+										Titipan premi Cabang Bandung
+									</td>
+									<td class="rp-number">
+										-368,674,950.00
+									</td>
+									<td class="rp-number">
+										364,814,055.00
+									</td>
+									<td class="rp-number">
+										1,035,000.00
+									</td>
+									<td class="rp-number">
+										-4,895,895.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										208000099
+									</td>
+									<td class="rp-text">
+										Utang lainnya
+									</td>
+									<td class="rp-number">
+										0.37
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.37
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										209000001
+									</td>
+									<td class="rp-text">
+										Cadangan premi
+									</td>
+									<td class="rp-number">
+										-71,420,139,266.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-71,420,139,266.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										209000002
+									</td>
+									<td class="rp-text">
+										Cadangan premi YBMP
+									</td>
+									<td class="rp-number">
+										-8,828,146,148.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-8,828,146,148.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										209000003
+									</td>
+									<td class="rp-text">
+										Cadangan Klaim
+									</td>
+									<td class="rp-number">
+										-39,325,540,995.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-39,325,540,995.00
+									</td>
+								</tr>
+								<tr>
+									<td id="ekuitas" class="rp-text">
+										<strong>Ekuitas</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-106,708,969,283.22
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-106,708,969,283.22
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										301000001
+									</td>
+									<td class="rp-text">
+										Modal disetor
+									</td>
+									<td class="rp-number">
+										-161,260,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-161,260,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										304000001
+									</td>
+									<td class="rp-text">
+										Surplus revaluasi aktiva tetap
+									</td>
+									<td class="rp-number">
+										-26,816,325,074.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-26,816,325,074.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										304000002
+									</td>
+									<td class="rp-text">
+										Surplus nilai pasar saham
+									</td>
+									<td class="rp-number">
+										-3,205,601,326.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-3,205,601,326.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										305000001
+									</td>
+									<td class="rp-text">
+										Imbalan kerja aktuarial gain / loss
+									</td>
+									<td class="rp-number">
+										-1,386,495,496.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-1,386,495,496.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										307000001
+									</td>
+									<td class="rp-text">
+										Laba / rugi ditahan
+									</td>
+									<td class="rp-number">
+										-9,490,044,726.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-9,490,044,726.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										307000002
+									</td>
+									<td class="rp-text">
+										Laba / rugi ditahan belum dibagi
+									</td>
+									<td class="rp-number">
+										95,449,497,338.78
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										95,449,497,338.78
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										308000001
+									</td>
+									<td class="rp-text">
+										Laba / rugi tahun berjalan
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td id="pendapatan" class="rp-text">
+										<strong>Pendapatan</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-3,131,587,513.32
+									</td>
+									<td class="rp-number">
+										598,087,383.00
+									</td>
+									<td class="rp-number">
+										738,133,022.04
+									</td>
+									<td class="rp-number">
+										-3,271,633,152.36
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										401000001
+									</td>
+									<td class="rp-text">
+										Premi langsung diterima
+									</td>
+									<td class="rp-number">
+										-301,845,218.62
+									</td>
+									<td class="rp-number">
+										524,957,601.00
+									</td>
+									<td class="rp-number">
+										703,012,503.04
+									</td>
+									<td class="rp-number">
+										-479,900,120.66
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										402000002
+									</td>
+									<td class="rp-text">
+										Premi re-asuransi treaty diterima
+									</td>
+									<td class="rp-number">
+										-8,991,564.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-8,991,564.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										403000001
+									</td>
+									<td class="rp-text">
+										Komisi langsung dibayar
+									</td>
+									<td class="rp-number">
+										918,356.30
+									</td>
+									<td class="rp-number">
+										73,129,782.00
+									</td>
+									<td class="rp-number">
+										35,120,519.00
+									</td>
+									<td class="rp-number">
+										38,927,619.30
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										404000002
+									</td>
+									<td class="rp-text">
+										Komisi re-asuransi dibayar treaty proporsional
+									</td>
+									<td class="rp-number">
+										224,789.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										224,789.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										405000003
+									</td>
+									<td class="rp-text">
+										Premi re-asuransi dibayar treaty proporsional
+									</td>
+									<td class="rp-number">
+										142,521,965.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										142,521,965.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										406000003
+									</td>
+									<td class="rp-text">
+										Komisi re-asuransi diterima treaty proporsional
+									</td>
+									<td class="rp-number">
+										-43,990,083.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-43,990,083.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										408000002
+									</td>
+									<td class="rp-text">
+										Cadangan premi periode berjalan
+									</td>
+									<td class="rp-number">
+										-905,692,193.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-905,692,193.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										408000004
+									</td>
+									<td class="rp-text">
+										Asset re-asuransi atas cadangan premi berjalan
+									</td>
+									<td class="rp-number">
+										305,985,580.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										305,985,580.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										409000002
+									</td>
+									<td class="rp-text">
+										CAPYBMP berjalan
+									</td>
+									<td class="rp-number">
+										-2,479,980,702.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-2,479,980,702.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										409000004
+									</td>
+									<td class="rp-text">
+										Asset re-asuransi atas CAPYBMP berjalan
+									</td>
+									<td class="rp-number">
+										159,261,557.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										159,261,557.00
+									</td>
+								</tr>
+								<tr>
+									<td id="beban-underwriting" class="rp-text">
+										<strong>Beban Underwriting</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										3,417,116,424.20
+									</td>
+									<td class="rp-number">
+										130,044,746.00
+									</td>
+									<td class="rp-number">
+										3,332,548.80
+									</td>
+									<td class="rp-number">
+										3,543,828,621.40
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										501000001
+									</td>
+									<td class="rp-text">
+										Klaim langsung
+									</td>
+									<td class="rp-number">
+										2,389,107,283.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,389,107,283.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										503000003
+									</td>
+									<td class="rp-text">
+										Klain re-asuransi diterima treaty proporsional
+									</td>
+									<td class="rp-number">
+										-236,787,721.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-236,787,721.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										504000001
+									</td>
+									<td class="rp-text">
+										Cadangan klaim periode berjalan
+									</td>
+									<td class="rp-number">
+										1,914,272,230.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,914,272,230.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										504000002
+									</td>
+									<td class="rp-text">
+										Cadangan klaim periode lalu
+									</td>
+									<td class="rp-number">
+										-796,200,877.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-796,200,877.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										505010008
+									</td>
+									<td class="rp-text">
+										Beban underwriting lain
+									</td>
+									<td class="rp-number">
+										145,696,509.20
+									</td>
+									<td class="rp-number">
+										130,044,746.00
+									</td>
+									<td class="rp-number">
+										3,332,548.80
+									</td>
+									<td class="rp-number">
+										272,408,706.40
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										505030003
+									</td>
+									<td class="rp-text">
+										Biaya survei - BBM
+									</td>
+									<td class="rp-number">
+										820,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										820,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										505030004
+									</td>
+									<td class="rp-text">
+										Biaya survei - tol dan parkir
+									</td>
+									<td class="rp-number">
+										129,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										129,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										505030006
+									</td>
+									<td class="rp-text">
+										Biaya survei - uang saku
+									</td>
+									<td class="rp-number">
+										60,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										60,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										505030008
+									</td>
+									<td class="rp-text">
+										Biaya survei - lain lain
+									</td>
+									<td class="rp-number">
+										20,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										20,000.00
+									</td>
+								</tr>
+								<tr>
+									<td id="hasil-investasi" class="rp-text">
+										<strong>Hasil Investasi</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-161,679,408.80
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-161,679,408.80
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										601000001
+									</td>
+									<td class="rp-text">
+										Bunga deposito
+									</td>
+									<td class="rp-number">
+										-17,204,536.80
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-17,204,536.80
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										601000003
+									</td>
+									<td class="rp-text">
+										Bunga investasi lain
+									</td>
+									<td class="rp-number">
+										-144,474,872.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-144,474,872.00
+									</td>
+								</tr>
+								<tr>
+									<td id="beban-usaha" class="rp-text">
+										<strong>Beban Usaha</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,729,255,262.03
+									</td>
+									<td class="rp-number">
+										192,819,727.00
+									</td>
+									<td class="rp-number">
+										3,594,840.24
+									</td>
+									<td class="rp-number">
+										1,918,480,148.79
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										701000003
+									</td>
+									<td class="rp-text">
+										Spanduk / sponsor
+									</td>
+									<td class="rp-number">
+										12,840,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										12,840,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										701000009
+									</td>
+									<td class="rp-text">
+										Promosi lainnya
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										2,603,035.00
+									</td>
+									<td class="rp-number">
+										-2,603,035.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										702000001
+									</td>
+									<td class="rp-text">
+										Jamuan makan / akomodasi
+									</td>
+									<td class="rp-number">
+										7,464,424.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										7,464,424.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										702000003
+									</td>
+									<td class="rp-text">
+										Partisipasi kegiatan pemasaran
+									</td>
+									<td class="rp-number">
+										1,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										702000004
+									</td>
+									<td class="rp-text">
+										Biaya entertainment lainnya
+									</td>
+									<td class="rp-number">
+										6,552,000.00
+									</td>
+									<td class="rp-number">
+										71,787,136.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										78,339,136.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										703000003
+									</td>
+									<td class="rp-text">
+										Gaji karyawan
+									</td>
+									<td class="rp-number">
+										1,011,206,761.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,011,206,761.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										703000004
+									</td>
+									<td class="rp-text">
+										Lembur
+									</td>
+									<td class="rp-number">
+										458,613.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										458,613.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										704000001
+									</td>
+									<td class="rp-text">
+										Pengobatan / BPJS Kesehatan
+									</td>
+									<td class="rp-number">
+										28,402,882.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										28,402,882.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										704000002
+									</td>
+									<td class="rp-text">
+										Makan lembur
+									</td>
+									<td class="rp-number">
+										89,500.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										89,500.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										704000003
+									</td>
+									<td class="rp-text">
+										Tunjangan fungsional karyawan
+									</td>
+									<td class="rp-number">
+										23,000,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										23,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										704000006
+									</td>
+									<td class="rp-text">
+										Dana pensiun / BPJS Ketenagakerjaan
+									</td>
+									<td class="rp-number">
+										48,764,620.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										48,764,620.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										704000099
+									</td>
+									<td class="rp-text">
+										Tunjangan kesejahteraan lain
+									</td>
+									<td class="rp-number">
+										20,650,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										20,650,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										706000001
+									</td>
+									<td class="rp-text">
+										Detasering dan penugasan
+									</td>
+									<td class="rp-number">
+										5,750,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										5,750,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										706000005
+									</td>
+									<td class="rp-text">
+										Pengobatan / kesehatan
+									</td>
+									<td class="rp-number">
+										47,269,710.85
+									</td>
+									<td class="rp-number">
+										2,565,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										49,834,710.85
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										707000003
+									</td>
+									<td class="rp-text">
+										Rapat lainnya
+									</td>
+									<td class="rp-number">
+										200,750.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										200,750.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										707000009
+									</td>
+									<td class="rp-text">
+										Biaya konsultan lain
+									</td>
+									<td class="rp-number">
+										37,250,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										37,250,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										707000010
+									</td>
+									<td class="rp-text">
+										Iuran keanggotaan
+									</td>
+									<td class="rp-number">
+										500,000.00
+									</td>
+									<td class="rp-number">
+										500,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										1,000,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										707000012
+									</td>
+									<td class="rp-text">
+										Retribusi kebersihan / keamanan
+									</td>
+									<td class="rp-number">
+										675,000.00
+									</td>
+									<td class="rp-number">
+										600,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										1,275,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										707000013
+									</td>
+									<td class="rp-text">
+										Selamatan / ritual
+									</td>
+									<td class="rp-number">
+										4,267,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										4,267,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										707000014
+									</td>
+									<td class="rp-text">
+										Bantuan non karyawan
+									</td>
+									<td class="rp-number">
+										871,136.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										871,136.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										707000015
+									</td>
+									<td class="rp-text">
+										Biaya umum lainnya
+									</td>
+									<td class="rp-number">
+										46,000.00
+									</td>
+									<td class="rp-number">
+										25,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										71,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000002
+									</td>
+									<td class="rp-text">
+										Listrik kantor
+									</td>
+									<td class="rp-number">
+										13,725,535.00
+									</td>
+									<td class="rp-number">
+										10,103,838.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										23,829,373.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000003
+									</td>
+									<td class="rp-text">
+										PAM
+									</td>
+									<td class="rp-number">
+										832,800.00
+									</td>
+									<td class="rp-number">
+										493,600.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										1,326,400.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000005
+									</td>
+									<td class="rp-text">
+										PBB / pajak daerah
+									</td>
+									<td class="rp-number">
+										959,500.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										959,500.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000006
+									</td>
+									<td class="rp-text">
+										Pemeliharaan gedung
+									</td>
+									<td class="rp-number">
+										135,046,917.00
+									</td>
+									<td class="rp-number">
+										41,883,517.00
+									</td>
+									<td class="rp-number">
+										11,818.00
+									</td>
+									<td class="rp-number">
+										176,918,616.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000008
+									</td>
+									<td class="rp-text">
+										Alat tulis kantor
+									</td>
+									<td class="rp-number">
+										1,052,400.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										1,052,400.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000009
+									</td>
+									<td class="rp-text">
+										Barang cetakan
+									</td>
+									<td class="rp-number">
+										2,799,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										2,799,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000010
+									</td>
+									<td class="rp-text">
+										Materai
+									</td>
+									<td class="rp-number">
+										6,937,010.80
+									</td>
+									<td class="rp-number">
+										1,542,000.00
+									</td>
+									<td class="rp-number">
+										971,940.24
+									</td>
+									<td class="rp-number">
+										7,507,070.56
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000011
+									</td>
+									<td class="rp-text">
+										Dokumentasi &amp; fotokopi
+									</td>
+									<td class="rp-number">
+										2,292,146.00
+									</td>
+									<td class="rp-number">
+										1,232,179.00
+									</td>
+									<td class="rp-number">
+										8,047.00
+									</td>
+									<td class="rp-number">
+										3,516,278.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000012
+									</td>
+									<td class="rp-text">
+										Pemeliharaan inventaris / alat kantor
+									</td>
+									<td class="rp-number">
+										1,060,000.00
+									</td>
+									<td class="rp-number">
+										490,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										1,550,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000013
+									</td>
+									<td class="rp-text">
+										Keperluan dapur &amp; kebersihan
+									</td>
+									<td class="rp-number">
+										2,747,200.00
+									</td>
+									<td class="rp-number">
+										808,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										3,555,200.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										708000015
+									</td>
+									<td class="rp-text">
+										Biaya kantor lain
+									</td>
+									<td class="rp-number">
+										10,607,949.00
+									</td>
+									<td class="rp-number">
+										7,089,153.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										17,697,102.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										709000001
+									</td>
+									<td class="rp-text">
+										Penyusutan bangunan
+									</td>
+									<td class="rp-number">
+										25,272,219.35
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										25,272,219.35
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										709000002
+									</td>
+									<td class="rp-text">
+										Penyusutan inventaris kantor
+									</td>
+									<td class="rp-number">
+										13,108,846.30
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										13,108,846.30
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										709000004
+									</td>
+									<td class="rp-text">
+										Amortisasi perangkat lunak
+									</td>
+									<td class="rp-number">
+										76,496,407.31
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										76,496,407.31
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										709000005
+									</td>
+									<td class="rp-text">
+										Amortisasi biaya ditangguhkan
+									</td>
+									<td class="rp-number">
+										33,972,803.12
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										33,972,803.12
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										709000006
+									</td>
+									<td class="rp-text">
+										Penyusutan komputer
+									</td>
+									<td class="rp-number">
+										7,857,733.30
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										7,857,733.30
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										710000001
+									</td>
+									<td class="rp-text">
+										Biaya penginapan
+									</td>
+									<td class="rp-number">
+										550,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										550,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										710000002
+									</td>
+									<td class="rp-text">
+										Biaya tiket
+									</td>
+									<td class="rp-number">
+										877,500.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										877,500.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										710000003
+									</td>
+									<td class="rp-text">
+										Biaya BBM
+									</td>
+									<td class="rp-number">
+										780,052.00
+									</td>
+									<td class="rp-number">
+										150,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										930,052.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										710000004
+									</td>
+									<td class="rp-text">
+										Biaya tol dan parkir
+									</td>
+									<td class="rp-number">
+										436,000.00
+									</td>
+									<td class="rp-number">
+										71,500.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										507,500.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										710000005
+									</td>
+									<td class="rp-text">
+										Biaya taksi
+									</td>
+									<td class="rp-number">
+										6,906,909.00
+									</td>
+									<td class="rp-number">
+										7,590,130.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										14,497,039.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										710000006
+									</td>
+									<td class="rp-text">
+										Biaya uang saku
+									</td>
+									<td class="rp-number">
+										675,000.00
+									</td>
+									<td class="rp-number">
+										110,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										785,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										710000008
+									</td>
+									<td class="rp-text">
+										Biaya perjalanan dinas lainnya
+									</td>
+									<td class="rp-number">
+										35,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										35,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										711000001
+									</td>
+									<td class="rp-text">
+										Administrasi rekening bank
+									</td>
+									<td class="rp-number">
+										6,234,149.00
+									</td>
+									<td class="rp-number">
+										413,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										6,647,149.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										711000003
+									</td>
+									<td class="rp-text">
+										Denda Bank
+									</td>
+									<td class="rp-number">
+										80,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										80,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										711000004
+									</td>
+									<td class="rp-text">
+										Biaya transfer / BG / cek dan materai
+									</td>
+									<td class="rp-number">
+										1,287,900.00
+									</td>
+									<td class="rp-number">
+										184,500.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										1,472,400.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										711000099
+									</td>
+									<td class="rp-text">
+										Biaya bank lainnya
+									</td>
+									<td class="rp-number">
+										610,000.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										610,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										712000001
+									</td>
+									<td class="rp-text">
+										Telepon dan fax
+									</td>
+									<td class="rp-number">
+										6,449,373.00
+									</td>
+									<td class="rp-number">
+										4,198,891.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										10,648,264.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										712000002
+									</td>
+									<td class="rp-text">
+										Pos
+									</td>
+									<td class="rp-number">
+										111,000.00
+									</td>
+									<td class="rp-number">
+										30,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										141,000.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										712000003
+									</td>
+									<td class="rp-text">
+										Ekspedisi
+									</td>
+									<td class="rp-number">
+										6,177,903.00
+									</td>
+									<td class="rp-number">
+										2,443,445.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										8,621,348.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										712000004
+									</td>
+									<td class="rp-text">
+										Internet
+									</td>
+									<td class="rp-number">
+										15,796,015.00
+									</td>
+									<td class="rp-number">
+										1,848,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										17,644,015.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										712000005
+									</td>
+									<td class="rp-text">
+										Komunikasi lain
+									</td>
+									<td class="rp-number">
+										14,896,338.00
+									</td>
+									<td class="rp-number">
+										14,870,838.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										29,767,176.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										713000001
+									</td>
+									<td class="rp-text">
+										BBM / oli
+									</td>
+									<td class="rp-number">
+										10,529,260.00
+									</td>
+									<td class="rp-number">
+										40,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										10,569,260.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										713000002
+									</td>
+									<td class="rp-text">
+										Pemeliharaan &amp; operasional kendaraan
+									</td>
+									<td class="rp-number">
+										64,795,999.00
+									</td>
+									<td class="rp-number">
+										21,750,000.00
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										86,545,999.00
+									</td>
+								</tr>
+								<tr>
+									<td id="pendapatan-lain" class="rp-text">
+										<strong>Pendapatan (Beban) Lain</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										-86,387,509.53
+									</td>
+									<td class="rp-number">
+										423,588.11
+									</td>
+									<td class="rp-number">
+										2,652,715.45
+									</td>
+									<td class="rp-number">
+										-88,616,636.87
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										801000001
+									</td>
+									<td class="rp-text">
+										Pendapatan jasa giro
+									</td>
+									<td class="rp-number">
+										-5,182,597.69
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										3,368.00
+									</td>
+									<td class="rp-number">
+										-5,185,965.69
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										801000003
+									</td>
+									<td class="rp-text">
+										Pendapatan jasa tabungan
+									</td>
+									<td class="rp-number">
+										-1,105,780.36
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										2,727.00
+									</td>
+									<td class="rp-number">
+										-1,108,507.36
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										801000007
+									</td>
+									<td class="rp-text">
+										Laba selisih kurs
+									</td>
+									<td class="rp-number">
+										-187,775.39
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										217,432.31
+									</td>
+									<td class="rp-number">
+										-405,207.70
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										801000008
+									</td>
+									<td class="rp-text">
+										Hasil polis
+									</td>
+									<td class="rp-number">
+										2,844,024.30
+									</td>
+									<td class="rp-number">
+										89,000.00
+									</td>
+									<td class="rp-number">
+										2,428,498.24
+									</td>
+									<td class="rp-number">
+										504,526.06
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										801000009
+									</td>
+									<td class="rp-text">
+										Pendapatan lainnya
+									</td>
+									<td class="rp-number">
+										-83,002,251.52
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										2.70
+									</td>
+									<td class="rp-number">
+										-83,002,254.22
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										802000003
+									</td>
+									<td class="rp-text">
+										Rugi selisih kurs
+									</td>
+									<td class="rp-number">
+										246,013.80
+									</td>
+									<td class="rp-number">
+										333,484.96
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										579,498.76
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										802000005
+									</td>
+									<td class="rp-text">
+										Beban lainnya
+									</td>
+									<td class="rp-number">
+										857.33
+									</td>
+									<td class="rp-number">
+										1,103.15
+									</td>
+									<td class="rp-number">
+										687.20
+									</td>
+									<td class="rp-number">
+										1,273.28
+									</td>
+								</tr>
+								<tr>
+									<td id="memo" class="rp-text">
+										<strong>Memo</strong>
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										659,637,294.85
+									</td>
+									<td class="rp-number">
+										659,637,294.85
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										900000021
+									</td>
+									<td class="rp-text">
+										Intercompany Due From
+									</td>
+									<td class="rp-number">
+										4,109,913,728.80
+									</td>
+									<td class="rp-number">
+										659,637,294.85
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										4,769,551,023.65
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										900000022
+									</td>
+									<td class="rp-text">
+										Intercompany Due To
+									</td>
+									<td class="rp-number">
+										-4,109,913,728.80
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td class="rp-number">
+										659,637,294.85
+									</td>
+									<td class="rp-number">
+										-4,769,551,023.65
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										999999980
+									</td>
+									<td class="rp-text">
+										Income Summary
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										999999990
+									</td>
+									<td class="rp-text">
+										Opening AP
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										999999991
+									</td>
+									<td class="rp-text">
+										Opening AR
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										999999995
+									</td>
+									<td class="rp-text">
+										Opening bank
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+								<tr>
+									<td class="rp-text">
+										999999996
+									</td>
+									<td class="rp-text">
+										Opening Asset
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td class="rp-number">
+										0.00
+									</td>
+								</tr>
+							</div>
+							</table>
+							</tbody>
+
+						</table>
+
+</body>
+
+
+</html>
