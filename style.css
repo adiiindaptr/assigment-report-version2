@@ -1,0 +1,140 @@
+body {
+  font-family: 'Noticia Text', serif;
+  background-color: #deffe0;
+}
+
+img {
+  width: 50%;
+  left: 700px;
+  bottom: 50px;
+  position: relative;
+}
+
+img:hover {
+  background-color: #78b38e;
+}
+
+#parameter-heading {
+  background-color: #378052;
+  padding-right: 50%;
+  padding-bottom: 50px;
+}
+
+.sticky-header {
+  position: sticky;
+  position: fixed;
+  background-color: #95cc99;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.big-heading   {
+  font-family: 'Noticia Text', serif;
+  font-size: 9rem;
+  padding-left: 80px;
+  padding-top: 30px;
+  color: #78b38e;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+}
+
+.row-number {
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  padding: 0 0px 10px 80px;
+}
+
+.row-text {
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  padding: 0 10px 10px 80px;
+}
+
+.row-txt {
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  padding: 0 10px 10px 80px;
+}
+
+.container-fluid {
+  padding: 0 7% 7% 7%;
+}
+
+.rp-table th {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #95cc99;
+  border-color: #7bb87f;
+  border-style: inset;
+  border-width: 4px;
+  font-size: 20px;
+}
+
+.rp-table td {
+  padding: 10px;
+  background-color: #B5F5BA;
+  border-color: #7bb87f;
+  border-style: ridge;
+  border-width: 2px;
+  font-size: 18px;
+}
+
+td:hover {
+  background-color: #e8fcf0;
+}
+
+th:hover {
+  background-color: #e8fcf0;
+}
+
+td:nth-child(even) {
+  background-color: #c7ffcb;
+}
+
+.rp-number {
+  text-align: right;
+}
+
+.top-container {
+  position: relative;
+  padding: 50px;
+}
+
+.middle-container {
+  margin: 50px;
+}
+
+@media (max-width: 1028px) {
+
+  .row-number {
+    font-size: 10px;
+    padding: 0 0px 5px 50px;
+  }
+
+  .row-text {
+    font-size: 10px;
+    padding: 0 5px 5px 50px;
+  }
+
+  .row-txt {
+    font-size: 10px;
+    padding: 0 5px 5px 50px;
+  }
+
+  .rp-table th {
+    padding: 8px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  .rp-table td {
+    padding: 5px;
+    border-width: 1px;
+    font-size: 10px;
+  }
+
+}
